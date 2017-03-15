@@ -1,0 +1,3 @@
+$sql=$conn->prepare("INSERT INTO student ('id','pass','type','name','branch','section','semester','ssc','inter','mail','phone') VALUES (?,?,?,?,?,?,?,?,?,?,?)");
+		$sql->bind_param("iisssssffss",$id,$pass,$radio,$name,$branch,$sec,$sem,$ten,$inter,$mail,$phone);
+		$sql->execute();
